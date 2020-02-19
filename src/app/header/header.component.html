@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>people_outline</mat-icon>
+        <span>Link Student</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>today</mat-icon>
+        <span>Study Plan</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </span>
+  <span class="fill-remaining-space">Application Title</span>
+</mat-toolbar>
